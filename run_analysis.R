@@ -1,13 +1,13 @@
 library(dplyr)
 filename <- "getdata_projectfiles_UCI HAR Dataset.zip"
 
-if (!file.exists(paste("../Datasets",filename,sep="/"))){
+if (!file.exists(filename)){
   fileURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
   download.file(fileURL, filename, method="wininet")
 }  
 
 # Checking if folder exists
-if (!file.exists("../Datasets/UCI HAR Dataset")) { 
+if (!file.exists("UCI HAR Dataset")) { 
   unzip(filename) 
 }
 
@@ -56,4 +56,8 @@ FinalData <- TidyData %>%
   group_by(subject, activity) %>%
   summarise_all(list(mean=mean))
 write.table(FinalData, "FinalData.txt", row.name=FALSE)
+
+
+
+
 
