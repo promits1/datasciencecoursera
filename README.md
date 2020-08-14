@@ -15,7 +15,7 @@ Files
     FinalData.txt is the exported final data after going through all the sequences described above.
     
  The dataset includes the following files:
-=========================================
+
 
 - 'README.txt'
 
