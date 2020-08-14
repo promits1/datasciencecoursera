@@ -4,15 +4,15 @@ Dataset
 Human Activity Recognition Using Smartphones
 Files
 
-    CodeBook.md  describes the variables, the data, and any transformations or work that I performed to clean data
-    run_analysis.R performs the data preparation and then followed by the 5 steps required as described in the course project’s definition:
-        Merges the training and the test sets to create one data set.
-        Extracts only the measurements on the mean and standard deviation for each measurement.
-        Uses descriptive activity names to name the activities in the data set
-        Appropriately labels the data set with descriptive variable names.
-        From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+CodeBook.md  describes the variables, the data, and any transformations or work that I performed to clean data
+ run_analysis.R performs the data preparation and then followed by the 5 steps required as described in the course project’s definition:
+ Merges the training and the test sets to create one data set.
+ Extracts only the measurements on the mean and standard deviation for each measurement.
+ Uses descriptive activity names to name the activities in the data set
+ Appropriately labels the data set with descriptive variable names.
+ From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-    FinalData.txt is the exported final data after going through all the sequences described above.
+ FinalData.txt is the exported final data after going through all the sequences described above.    
     
  The dataset includes the following files :
 
@@ -43,8 +43,7 @@ The following files are available for the train and test data. Their description
 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
 
-Notes: 
-======
+Notes:
 - Features are normalized and bounded within [-1,1].
 - Each feature vector is a row on the text file.
 
